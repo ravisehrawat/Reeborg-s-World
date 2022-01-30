@@ -1,0 +1,12 @@
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+put("token")
+move()
+while not object_here("token"):
+    if front_is_clear():
+        move()
+    else:
+        turn_left()
